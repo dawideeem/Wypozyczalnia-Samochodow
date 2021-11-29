@@ -1,0 +1,14 @@
+<h1 class="display-4 text-center">Panel Administratora</h1>
+<nav class="navbar navbar-light bg-light">
+  <form class="container-fluid justify-content-center">
+    <button class="btn btn-outline-success m-1 me-2" routerLink="list">Lista Samochodów</button>
+    <button class="btn btn-outline-success m-1 me-2" routerLink="create">Dodaj Samochód</button>
+    <button class="btn btn-outline-success m-1 me-2" routerLink="userlist">Lista Użytkowników</button>
+    <button class="btn btn-outline-success m-1 me-2" routerLink="useradd">Utwórz Konto Administratora</button>
+    <button class="btn btn-outline-success m-1 me-2" routerLink="msg">Wiadomości</button>
+    <button class="btn btn-outline-success m-1 me-2" [routerLink]="['']">Wróć</button>
+  </form>
+
+</nav>
+
+<router-outlet></router-outlet>

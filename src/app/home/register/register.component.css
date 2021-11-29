@@ -1,0 +1,8 @@
+a:hover{text-decoration: underline !important}
+a{
+    text-decoration: none !important;
+    color: white;
+}
+.row{
+    --bs-gutter-x:0;
+}

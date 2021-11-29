@@ -1,0 +1,11 @@
+<h1 class="display-4 text-center">Witaj {{userData}} !</h1>
+<nav class="navbar navbar-light bg-light">
+  <form class="container-fluid justify-content-center">
+    <button class="btn btn-outline-success m-1 me-2" routerLink="edituser"><i class="fas fa-id-card"> Edytuj swoje Dane</i></button>
+    <button class="btn btn-outline-success m-1 me-2" routerLink="create"><i class="fas fa-wallet"> Twoje wypozyczenia</i></button>
+    <button class="btn btn-outline-success m-1 me-2" [routerLink]="['']">Wróć</button>
+  </form>
+
+</nav>
+
+<router-outlet></router-outlet>

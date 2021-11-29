@@ -1,0 +1,22 @@
+<h1 class="display-6 text-center">Wiadomości</h1>
+<div class="table-responsive">
+<table class="table text-center">
+    <thead>
+      <tr>
+        <th scope="col">Użytkownik</th>
+        <th scope="col">Temat</th>
+        <th scope="col">Wiadomość</th>
+        <th scope="col">Opcje</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let ms of msg">
+      <tr>
+        <td>{{ms.username}}</td>
+        <td>{{ms.subject}}</td>
+        <td>{{ms.message}}</td>
+        <td> <button type="button" class="btn btn-success m-1"  routerLink="/admin/edit">Odpowiedz</button>
+          <button type="button" (click)="delete(ms.id)" class="btn btn-danger m-1">Usuń</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
